@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&display=swap');
+
+* {
+    font-family: 'Lexend Deca', sans-serif;
+    padding: 0;
+    margin: 0;
+    font-size: 94%;
+    color: #fff;
+    box-sizing: border-box;
+}
+
+body {
+    /* background-color: hsl(233, 47%, 7%); */
+    background-color: hsl(0, 0%, 95%);
+    
+    height: 100vh;
+    position: relative;
+}
+
+.main {
+    width: 100%;
+    height: 90%;
+    position: relative;
+}
+
+
+.main .box-container {
+    display: flex;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform:  translate(-50%, -50%);
+    border-radius: 1rem;
+    overflow: hidden;
+}
+
+.main .box-container .box {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items:flex-start;
+    height: 30rem;
+    width: 20rem;
+    padding: 0 3rem;
+}
+
+.main .box-container .box > * {
+    margin: 1rem 0;
+}
+
+.main .box-container .box h2 {
+    font-family: 'Big Shoulders Display', cursive;
+    font-weight: 700;
+    color: hsl(0, 0%, 95%);
+    text-transform: uppercase;
+    font-size: 2rem;
+
+}
+
+.main .box-container .box p {
+    color: hsla(0, 0%, 100%, 0.75);
+    flex-wrap: wrap;
+    font-size: 1rem;
+    line-height: 1.5rem;
+}
+
+.main .box-container .box button {
+    background-color: hsl(0, 0%, 95%);
+    color: hsl(31, 77%, 52%);
+    border-radius: 5rem;
+    width: 8rem;
+    height: 2.5rem;
+    border: none;
+}
+
+
+.main .box-container .box:nth-of-type(1) {
+
+    background-color: hsl(31, 77%, 52%);
+    
+}
+
+.main .box-container .box:nth-of-type(2) {
+
+    background-color: rgb(0, 105, 112)
+}
+
+.main .box-container .box:nth-of-type(3) {
+
+    background-color: hsl(179, 100%, 13%)
+}
+
+
+.attribution {
+    text-align: center;
+    font-size: 1.5rem;
+    color: hsl(31, 77%, 52%);
+}
+
+.attribution a {
+    text-decoration: none;
+}
+
+.attribution a:hover {
+    text-decoration: underline;
+}
+
+
+
+
+
+
+
+
+
+@media(max-width:1000px){ 
+.main {
+    height: 160vh;
+    display: flex;
+    flex-flow: column;
+}
+
+.main .box-container {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    transform:  translate(0%, 0%);
+    border-radius: 1rem;
+    width: 90%;
+    margin: 2% 5%;
+    overflow: hidden;
+    
+}
+
+.main .box-container .box {
+    width: 100%;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items:flex-start;
+    height: max-content;
+    padding: 1rem 3rem;
+}
+
+.attribution {
+    font-size: 1.2rem;
+}
+    
+}
+
+
+
+
